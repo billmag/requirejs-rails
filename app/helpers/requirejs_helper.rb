@@ -76,11 +76,11 @@ module RequirejsHelper
     end
   end
 
-  def javascript_path(source, options = {})
+  def javascript_path(source)
     if defined?(super)
       super
     else
-      view_proxy.javascript_path(source, options)
+      view_proxy.javascript_path(source)
     end
   end
 
